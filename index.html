@@ -253,10 +253,54 @@ h2 {
     box-shadow: 0 0 30px rgba(255,255,255,0.15);
 }
 </style>
+   <style>
+/* 🌸 DARK PINK POOKIE BACKGROUND */
+body {
+    background: linear-gradient(135deg, #250013, #5a0b35, #86164f, #3b0624);
+    background-size: 400% 400%;
+    animation: pinkBackground 15s ease infinite;
+    overflow-x: hidden;
+}
+
+@keyframes pinkBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* 💕 Floating decorations */
+.pookie-decoration {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.pookie {
+    position: absolute; 
 </head>
 
 
 <body>
+    <div class="pookie-decoration">
+    <div class="pookie">💕</div>
+    <div class="pookie">✨</div>
+    <div class="pookie">💗</div>
+    <div class="pookie">🌸</div>
+    <div class="pookie">✨</div>
+</div>
+
+<div class="cat one">🐱</div>
+<div class="cat two">🐈</div>
 
 
 <!-- FIRST PAGE -->
